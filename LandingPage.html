@@ -12,6 +12,9 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
+
+<a href="#secciones"></a>
+
 <body>
     <!-- Headers -->
     <header class="row">
@@ -25,9 +28,9 @@
     <main>
         <div class="row">
             <!-- Imagen and texto -->
-            <nav class="navbar sticky-top navbar-light bg-light p-3">
+            <nav class="navbar sticky-top navbar-light bg-light p-3" id="Principal">
                 <a class="navbar-brand ;" href="#">
-                    <img src="images/carpa.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    <img src="carpa.png" width="30" height="30" class="d-inline-block align-top" alt="">
                     CampingUTN-Programa
                 </a>
             </nav>
@@ -35,7 +38,7 @@
        
         <div class="row py-lg box ">
             <div class="container">
-                <div class="col-lg-6 col-md-8 mx-auto py-4">
+                <div class="col-lg-6 col-md-8 mx-auto  py-4">
                     <h1 class="fw-bold ">CAMPING UTN - PROGRAMA</h1>
                     <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de
                     relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)
@@ -62,22 +65,22 @@
                             <form action="" method="post" enctype="text/plain">
                                 <!-- <div class="card-body"> -->
                                 <div class="input-group p-1 ">
-                                    <span class="input-group-text" id="basic-addon1">E-mail</span>
+                                    <span class="input-group-text" id="basic-addon1"style= "width:100px">E-mail</span>
                                     <input type="email" class="form-control" placeholder="test@example.com" aria-label="Username"
                                         aria-describedby="basic-addon1">
                                 </div>
                                 <div class="input-group p-1">
-                                    <span class="input-group-text" id="basic-addon1">Personas</span>
+                                    <span class="input-group-text" id="basic-addon1"style= "width:100px">Personas</span>
                                     <input type="number" class="form-control" placeholder="Cantidad" aria-label="Username"
                                         aria-describedby="basic-addon1">
                                 </div>
                                 <div class="input-group p-1">
-                                    <span class="input-group-text" id="basic-addon1">Ingreso</span>
+                                    <span class="input-group-text" id="basic-addon1"style= "width:100px">Ingreso</span>
                                     <input type="date" id="start" class="form-control" placeholder="Fecha de ingreso" aria-label="Username" name="trip-start"
                                         min="" max="2024-12-31" aria-describedby="basic-addon1">
                                 </div>
                                 <div class="input-group p-1">
-                                    <span class="input-group-text" id="basic-addon1">Salida</span>
+                                    <span class="input-group-text" id="basic-addon1" style= "width:100px">Salida</span>
                                     <input type="date" id="end" class="form-control" placeholder="Fecha de salida" aria-label="Username" name="trip-end"
                                         min="" max="2024-12-31" aria-describedby="basic-addon1">
                                 </div>
@@ -85,7 +88,7 @@
                                 <div class="card m-1">
                                     <div class="card-body text-center">
                                         <label for="car" class="bi bi-car-front-fill"> ¿Vienen en auto?</label>
-                                        <input type="checkbox" name="car" id="car">
+                                        <input type="checkbox" name="car" id="car" style="cursor: pointer;">
                                     </div>
                                 </div>
                             </form>
@@ -142,9 +145,15 @@
                                 <input type="text" class="form-control" placeholder="Tu ubicacion actual" aria-label="Username"
                                     aria-describedby="basic-addon1">
                             </div>
-                            <img src="images/mapa.jpg" class="img-thumbnail" alt="...">
+                            <div  class="mapa">
+                                <div class="ratio ratio-16x9">
+                                    <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11913.495175458253!2d-55.924295608973544!3d-27.409945898940652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1680926434937!5m2!1ses!2sar" allowfullscreen></iframe>
+                                </div>
+                              
                         
-                        </div>      
+                            </div>   
+                        </div>
+                        
                         <div class="card-footer">
                             <div class="d-grid gap-2 mx-auto">
                                 <button type="button" class="btn btn-secondary bi bi-geo-alt"> INDICACIONES</button>
@@ -170,10 +179,11 @@
             
             <!-- Redes sociales -->
             <div class="col-sm-12 pb-3">
-                <i class="bi bi-twitter"></i>
-                <i class="bi bi-instagram"></i>
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-youtube"></i>
+                <a ref> </a>
+                <i class="bi bi-twitter" style="cursor: pointer;"></i>
+                <i class="bi bi-instagram" style="cursor: pointer;"></i>
+                <i class="bi bi-facebook" style="cursor: pointer;"></i>
+                <i class="bi bi-youtube" style="cursor: pointer; "></i>
             </div>
         </div> 
         
@@ -181,8 +191,7 @@
         <div class="text-center pt-3" style="background-color: rgba(35, 124, 13, 0.2) pt-2 pb-2;">
             <p>© 2023 Copyright: Berta, Marcos - RIOS, Sebastian Manuel</p>
             <img src="carpa.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            <a class="text-black pb-3" href="https://CampingUTN-Programa.com/">CampingUTN-Programa.com</a><br>
-            
+            <a class="text-black pb-3" href="#Principal">CampingUTN-Programa.com</a><br>
         </div>
         
     </footer>
